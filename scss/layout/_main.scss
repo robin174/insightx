@@ -102,19 +102,13 @@ main {
 section.box--square {
     position: relative;
     width: 100%;
-    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    padding-bottom: 50%; /* = width for a 1:1 aspect ratio */
     overflow:hidden;
     margin-bottom: 30px;
     transition: 0.3s;
     background-color: rgba(26,33,40,0.85);
     & h2.post--title {
-        color: rgba(255,255,255,0.6);
-    }
-    &:hover {
-        background-color: rgba(26,33,40,1);
-        & h2.post--title {
-            color: rgba(255,255,255,1);
-        }
+        color: rgba(255,255,255,0.9);
     }
     & .box--content {
         position:absolute;
@@ -130,6 +124,22 @@ section.box--square {
     & .box--table-cell {
         display:table-cell;
         vertical-align:top;
+    }
+}
+
+@media (min-width: 550px) {
+    section.box--square {
+        width: 100%;
+        padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+        & h2.post--title {
+            color: rgba(255,255,255,0.6);
+        }
+        &:hover {
+            background-color: rgba(26,33,40,1);
+            & h2.post--title {
+                color: rgba(255,255,255,1);
+            }
+        }
     }
 }
 

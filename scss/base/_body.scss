@@ -1,0 +1,132 @@
+@import "bourbon";
+
+/* Initial sizing - set in 'helpers' - '_variables.scss' */
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+/* Base styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+	background-color: $color--primary;
+	color: $color--white;
+}
+
+a {
+	transition: 0.3s;
+	color: $color--tertiary;
+	&:link { // unvisited link
+		color: $color--tertiary;
+	}
+	&:visited { // visited link
+		color: $color--tertiary;
+	}
+	&:active { // selected link
+		color: $color--tertiary;
+	}
+	&:hover { // mouse over link
+		color:$color--secondary;
+	}
+}
+
+a.buttonTextLarge {
+ 	color: $color--secondary;
+	font-size: 1.8rem;
+	&:link { // unvisited link
+		color: $color--secondary;
+	}
+	&:visited { // visited link
+		color: $color--secondary;
+	}
+	&:active { // selected link
+		color: $color--secondary;
+	}
+	&:hover {
+		color: $color--white;
+	}
+}
+
+// Whole Div Links - Part 1
+a.link-div { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;// Makes sure the link doesn't get underlined
+    z-index: 10; // raises anchor tag above everything else in div 
+    background-color: #fff; // workaround to make clickable in IE
+    opacity: 0; // workaround to make clickable in IE
+    filter: alpha(opacity=0); //workaround to make clickable in IE
+}
+
+// Whole Div Links - Part 2
+.box--square { // Whole div link - respective block
+	min-height: none;
+	position: relative;
+	&:hover {
+		cursor: hand;
+    	cursor: pointer;
+	}
+}
+
+.grid-container {
+	padding: 0 $padding--small;
+	max-width: 67.5rem; // 1080px
+}
+
+.dot--brand {
+	font-size: 0.2rem;
+	margin-right: 5px;
+	color:$color--secondary;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	& figcaption {
+		margin-top:5px;
+		color: $color--tertiary;
+		& a {
+			color: $color--tertiary;
+			text-decoration: underline;
+			&:hover {
+				color: $color--white;
+				text-decoration: underline;
+			}
+		}
+
+	}
+	&.headshot--team {
+		width: 100%;
+		margin-bottom: $margin--small/2;
+	}
+}
+
+@media (min-width: 750px) {
+	figure {
+		&.headshot--team {
+			width: 50%;
+		}
+	}
+}
+
+img.in--title {
+	width: 15rem;
+	margin-right: 5px;
+}

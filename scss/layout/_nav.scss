@@ -1,0 +1,88 @@
+.off-canvas {
+	background-color: $color--primary;
+}
+
+.top-bar {
+	// border-bottom: 7px solid $color--primary-black;
+	// padding: $padding--small/2 $padding--small;
+	font-family: $font--family-body;
+	padding: $padding--small;
+	font-weight: $font--medium;
+}
+
+@media (min-width: 750px) {
+	.top-bar {
+		padding: $padding--small $padding--general*2;
+	}
+}
+
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+	max-width: 50%;
+}
+
+.top-bar, .top-bar ul {
+	background-color: #2A303C;
+}
+
+.top-bar a, .menu a {
+	font-family: $font--family-body;
+	font-weight: $font--medium;
+	color: $color--tertiary;
+}
+
+.top-bar-left .menu a {
+	font-weight: $font--bold;
+	padding: 0;
+}
+
+.float-right ul.menu {
+	display:block;
+	float:right;
+}
+
+.menu > li {
+	// transition-property: background-color;
+  	// transition-duration: .4s;
+  	// border-radius: 5px;
+  	// background-color: $color--primary-orange-dark-10;
+  	// margin-right: 5px;
+  	&:last-child {
+  		// margin-right: 0;
+  	}
+}
+
+.menu > li > a {
+	// line-height: 1;
+	// padding: 0.5rem 0.35rem;
+}
+
+.menu > li:hover {
+	// border-radius: 5px;
+	// background-color: $color--primary-orange-dark-20;
+}
+
+.menu .active > a, .menu .is-active > a {
+	// border-radius: 5px;
+	background-color: $color--secondary;
+}
+
+/* Font Awesome replacement */
+.menu-fa {
+	color: $color--secondary;
+	cursor: pointer;
+}
+
+.menu .menu-icon {
+	width: 40px;
+	top: -5px;
+	&:after {
+		background: $color--secondary;
+		height: 3px;
+		box-shadow: 0 10px 0 $color--secondary, 0 20px 0 $color--secondary,
+	}
+}
+
+
+.dropdown.menu > li > a {
+	// padding: 0.7rem 0.7rem 0.6rem;
+}

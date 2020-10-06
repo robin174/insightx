@@ -1,0 +1,30 @@
+figure {
+	&.border--shadow {
+		border: 5px solid white;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+	&.photo {
+		width:100%;
+		margin-bottom: 10px;
+	}
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than phablet */
+@media (min-width: 550px) {
+	figure {
+		&.photo {
+			width:70%; // For large
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	figure {
+		&.photo {
+			width:50%; // For large
+		}
+	}
+}

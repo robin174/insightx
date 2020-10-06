@@ -1,0 +1,27 @@
+.form--contact {
+	& form {
+		& label {
+			font-family: $font--family-body;
+			font-weight: $font--medium;
+			color: $color--white;
+			line-height: 2;
+			& input, & textarea {
+				font-family: $font--family-body;
+				font-weight: $font--medium;
+				color: $color--primary; 
+				border: none;
+			}
+		}
+	}
+	input[type="submit"] {
+		padding:10px;
+		background-color: $color--secondary;
+		border: none;
+		font-weight: $font--medium;
+		font-family: $font--family-body;
+		color: $color--white;
+		&:hover {
+			background-color: $color--tertiary;
+		}
+	}
+}

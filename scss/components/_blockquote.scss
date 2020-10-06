@@ -1,0 +1,12 @@
+blockquote {
+	font-family: $font--family-brand;
+	font-size: 1.6rem;
+	color: $color--secondary;
+	border: none;
+	margin:0;
+	& cite {
+		margin:5px;
+		font-size: 1.2rem;
+		color: $color--secondary;
+	}
+}

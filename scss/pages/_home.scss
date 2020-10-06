@@ -1,0 +1,11 @@
+.blockHome {
+	padding-top: $padding--general*2;
+	padding-bottom: $padding--general*2; 
+	& h2 {
+		font-size: 3rem;
+		color: $color--white;
+	}
+	& .red {
+		color: $color--secondary;
+	}
+}

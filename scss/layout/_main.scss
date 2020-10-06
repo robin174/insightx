@@ -1,6 +1,13 @@
 main {
-	padding-top: $padding--general;
-	padding-bottom: $padding--general;
+	padding-top: $padding--small;
+	padding-bottom: $padding--small/2;
+}
+
+@media (min-width: 550px) {
+    main {
+        padding-top: $padding--general;
+        padding-bottom: $padding--general;
+    }
 }
 
 .content .grid-container {

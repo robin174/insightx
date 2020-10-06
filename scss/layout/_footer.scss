@@ -1,7 +1,7 @@
 footer, .footer {
 	margin-top: 0;
 	padding-top: $padding--small;
-	padding-bottom: $padding--general;
+	padding-bottom: $padding--small;
 	& .grid-container {
 		padding-top: $padding--small;
 		border-top: 1px solid rgba(255,255,255,0.25);
@@ -9,4 +9,11 @@ footer, .footer {
 	& p:last-child {
 		margin-bottom: 0;
 	}
+}
+
+@media (min-width: 550px) {
+    footer, .footer {
+        padding-top: $padding--small;
+		padding-bottom: $padding--general;
+    }
 }

@@ -341,8 +341,13 @@ blockquote {
     box-shadow: 0 10px 0 #df0914, 0 20px 0 #df0914; }
 
 main {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem; }
+
+@media (min-width: 550px) {
+  main {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
 
 .content .grid-container {
   padding-left: 0;
@@ -493,12 +498,17 @@ section.unit_footnote {
 footer, .footer {
   margin-top: 0;
   padding-top: 1.5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 1.5rem; }
   footer .grid-container, .footer .grid-container {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.25); }
   footer p:last-child, .footer p:last-child {
     margin-bottom: 0; }
+
+@media (min-width: 550px) {
+  footer, .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem; } }
 
 .blockHome {
   padding-top: 6rem;

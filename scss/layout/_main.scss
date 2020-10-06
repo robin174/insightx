@@ -3,6 +3,17 @@ main {
 	padding-bottom: $padding--general;
 }
 
+.content .grid-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 400px) {
+    .inner-content .grid-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
 
 // For 'What we do' page
 .page-template-page-what {

@@ -13,7 +13,7 @@ get_header(); ?>
 
 	                	<div class="grid-container grid-x grid-padding-x">
 	               			<div class="small-12 medium-12 large-12 cell">
-								<h1 class="with--logo"><img class="in--title" src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg" title="Logo - Insight.X"><?php the_title(); ?></h1>
+								<h1 class="with--logo"><img class="in--title show-for-medium" src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg" title="Logo - Insight.X"><?php the_title(); ?></h1>
 							</div>
 						</div>
 

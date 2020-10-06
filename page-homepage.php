@@ -16,8 +16,6 @@ get_header(); ?>
 						<h2>Because <span class="red">Reputation</span> is Everything</h2>
 						<p><span class="dot--brand"><i class="fas fa-square-full"></i></span><a href="<?php echo get_page_link( get_page_by_path( 'what-we-do' ) ); ?>">What we do</a></p>
                 	</section>
-					
-					
                 </div>
             </div>
 

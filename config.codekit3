@@ -2271,6 +2271,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/scss/layout/_buildingblocks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/css/_buildingblocks.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/scss/layout/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2358,19 +2371,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/css/_home.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/scss/pages/_how.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_how.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1

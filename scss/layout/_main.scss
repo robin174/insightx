@@ -3,156 +3,8 @@ main {
 	padding-bottom: $padding--general;
 }
 
-// check if needed?
-.block--primary {
-	padding-top: $padding--small;
-	padding-bottom: $padding--small;
-}
 
-// check if needed?
-.block--secondary {
-	padding-top: $padding--small;
-	padding-bottom: $padding--small;
-}
-
-// Square Post Previews
-section.box--square {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
-    overflow:hidden;
-    margin-bottom: 30px;
-    transition: 0.3s;
-    background-color: rgba(26,33,40,0.85);
-    & h2.post--title {
-    	color: rgba(255,255,255,0.6);
-    }
-    &:hover {
-    	background-color: rgba(26,33,40,1);
-    	& h2.post--title {
-    		color: rgba(255,255,255,1);
-    	}
-    }
-    & .box--content {
-    	position:absolute;
-    	width:100%;
-    	height:100%;
-	}
-	& .box--table {
-    	display:table;
-    	width:100%;
-    	height:100%;
-    	padding:15px;
-	}
-	& .box--table-cell {
-    	display:table-cell;
-    	vertical-align:top;
-	}
-}
-
-.team--preview {
-	margin-bottom: $margin--general;
-}
-
-.columns--two {
-	columns: 1;
-}
-
-section.data--entry {
-	text-transform: uppercase;
-	color: $color--tertiary;
-	margin-bottom: 5px;
-}
-
-@media (min-width: 550px) {
-	.columns--two {
-		columns: 2;
-	}
-}
-
-article a {
-    color: $color--secondary;
-    &:hover {
-        color: $color--tertiary;
-    }
-}
-
-
-ul.standfirst {
-    margin-top:5px;
-    margin-left: $margin--small;
-    list-style-type: '» ';
-    & li {
-        color:$color--secondary;
-        font-size: 1.6rem;
-        line-height: 1.1;
-        margin-bottom: 5px;
-        font-family: $font--family-brand;
-        font-weight: $font--medium;
-        & span {
-            color:$color--white;
-        }
-    }
-}
-
-
-// Building Block sections
-section.unit_blockquote {
-    padding: $padding--small/2 0;
-    & blockquote {
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: $padding--general;
-        line-height: 1.2;
-        font-size: 1.6rem;
-        font-family: $font--family-brand;
-        font-weight: $font--medium;
-        color: $color--tertiary;
-        margin-bottom: $margin--small/2;
-        & cite {
-            color: $color--white;
-        }
-    }
-}
-
-@media (min-width: 550px) {
-    section.unit_blockquote {
-        & blockquote {
-            padding-right: $padding--general*3.5;
-        }
-    }
-}
-
-@media (min-width: 750px) {
-    section.unit_blockquote {
-        & blockquote {
-            padding-right: $padding--general*7;
-        }
-    }
-}
-
-section.unit_footnote {
-    border-top: 1px solid $color--tertiary;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: $margin--small;
-    padding-top: $padding--small;
-    padding-bottom: $padding--small;
-    & p.note {
-        color: rgba(255,255,255,0.7);
-        font-size: 1rem;
-        font-style: italic;
-    }
-}
-
-// Reputational Risk Reports {
-.page-template-page-how {
-    background-image: url(../images/insightx-circlesv6.png);
-    background-repeat: no-repeat;
-    background-position: center -10px;  
-} 
-
-// For What we do page
+// For 'What we do' page
 .page-template-page-what {
     & .section--part-01 {
         & h2 {
@@ -197,7 +49,104 @@ section.unit_footnote {
     }
 }
 
-// For Contact page 
+
+// For 'How we do it' page {
+.columns--two {
+    columns: 1;
+}
+
+@media (min-width: 550px) {
+    .columns--two {
+        columns: 2;
+    }
+}
+
+.page-template-page-how {
+    background-image: url(../images/insightx-circlesv6.png);
+    background-repeat: no-repeat;
+    background-position: center -10px;  
+}
+
+.col--baseline {
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+
+// For 'Who we are' page
+.team--preview {
+    margin-bottom: $margin--general;
+}
+
+
+// For 'This is why it is important' page = blog posts
+section.box--square {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    background-color: rgba(26,33,40,0.85);
+    & h2.post--title {
+        color: rgba(255,255,255,0.6);
+    }
+    &:hover {
+        background-color: rgba(26,33,40,1);
+        & h2.post--title {
+            color: rgba(255,255,255,1);
+        }
+    }
+    & .box--content {
+        position:absolute;
+        width:100%;
+        height:100%;
+    }
+    & .box--table {
+        display:table;
+        width:100%;
+        height:100%;
+        padding:15px;
+    }
+    & .box--table-cell {
+        display:table-cell;
+        vertical-align:top;
+    }
+}
+
+section.data--entry {
+    text-transform: uppercase;
+    color: $color--tertiary;
+    margin-bottom: 5px;
+}
+
+article a {
+    color: $color--secondary;
+    &:hover {
+        color: $color--tertiary;
+    }
+}
+
+ul.standfirst {
+    margin-top:5px;
+    margin-left: $margin--small;
+    list-style-type: '» ';
+    & li {
+        color:$color--secondary;
+        font-size: 1.6rem;
+        line-height: 1.1;
+        margin-bottom: 5px;
+        font-family: $font--family-brand;
+        font-weight: $font--medium;
+        & span {
+            color:$color--white;
+        }
+    }
+}
+
+
+// For 'Contact' page 
 .page-template-page-contact {
 	background-image: url(../images/insightx-background-contact.jpg);
 	background-position: top;

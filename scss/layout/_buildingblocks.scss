@@ -1,0 +1,48 @@
+// Building Block sections
+section.unit_blockquote {
+    padding: $padding--small/2 0;
+    & blockquote {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: $padding--general;
+        line-height: 1.2;
+        font-size: 1.6rem;
+        font-family: $font--family-brand;
+        font-weight: $font--medium;
+        color: $color--tertiary;
+        margin-bottom: $margin--small/2;
+        & cite {
+            color: $color--white;
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    section.unit_blockquote {
+        & blockquote {
+            padding-right: $padding--general*3.5;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    section.unit_blockquote {
+        & blockquote {
+            padding-right: $padding--general*7;
+        }
+    }
+}
+
+section.unit_footnote {
+    border-top: 1px solid $color--tertiary;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: $margin--small;
+    padding-top: $padding--small;
+    padding-bottom: $padding--small;
+    & p.note {
+        color: rgba(255,255,255,0.7);
+        font-size: 1rem;
+        font-style: italic;
+    }
+}

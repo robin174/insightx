@@ -22,7 +22,8 @@ get_header(); ?>
 						        $args=array(
 						            'post_type' => 'post',
 						            'post_status' => 'publish',
-									'order'   => 'DESC'
+									'orderby' => 'menu_order', 
+    								'order' => 'ASC', 
 						        );
 						        $my_query = null;
 						        $my_query = new WP_Query($args);
@@ -32,7 +33,6 @@ get_header(); ?>
 						    	<?php endwhile; }
 						    	wp_reset_query(); ?>
 				    	</div>
-
 	                </div>
            		</div>
             </div>

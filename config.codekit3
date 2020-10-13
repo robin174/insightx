@@ -674,25 +674,14 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/images/insightx-circlesv4.png": {
+	"/images/insightx-circles-col-v1.png": {
 		"ft": 32768,
-		"iS": 53032,
+		"iS": 45581,
 		"oA": 0,
-		"oAP": "/images/insightx-circlesv4.png",
+		"oAP": "/images/insightx-circles-col-v1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/insightx-circlesv5.png": {
-		"ft": 32768,
-		"iS": 48323,
-		"oA": 0,
-		"oAP": "/images/insightx-circlesv5.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -787,6 +776,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/page-animation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-animation.php",
 		"oF": 0
 		},
 	"/page-blog.php": {
@@ -1253,6 +1250,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/scss/animate/css/bouncing-exits.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/scss/animate/_extra/_fadeInAndOut.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/animate/css/_fadeInAndOut.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -2228,6 +2238,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/css/_figure.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/scss/components/_introduction.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/css/_introduction.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1

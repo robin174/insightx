@@ -1,0 +1,110 @@
+@keyframes bounceIn {
+	0% {
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	60% {
+		transform: scale(1.8);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Overall styles */
+.animation {
+	text-align: center;
+	padding-top: $margin--general*4; 
+	font-family: $font--family-brand;
+}
+
+.appearFirst {
+	font-size: 4rem;
+	line-height: 1;
+	margin: 0;
+  	@include fadeIn(
+		$duration: 3s,
+		$count: 1,
+	);
+}
+
+.appearSecond {
+	font-size: 4rem;
+	line-height: 1;
+	margin: 0;
+	@include fadeInAndOut(
+		$duration: 1s,
+		$count: 1,
+		$delay: 4s,
+	);
+}
+
+.appearLogo {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: $margin--general;
+	@include fadeIn(
+		$duration: 3s,
+		$count: 1,
+		$delay: 5s,
+	);
+}
+
+.appearStrapline {
+	font-size: 2.5rem;
+	display: block;
+	@include fadeIn(
+		$duration: 1s,
+		$count: 1,
+		$delay: 7s,
+	);
+}
+
+.appearLink {
+	display: block;
+	@include fadeIn(
+		$duration: 1s,
+		$count: 1,
+		$delay: 8s,
+	);
+}
+
+
+.boxFirst {
+	@include fadeInAndOut(
+		$duration: 4s,
+		$count: 1,
+		$delay: 1s,
+	);
+}
+
+.boxSecond {
+	@include fadeInAndOut(
+		$duration: 4s,
+		$count: 1,
+		$delay: 5s,
+	);
+}
+
+
+span.red {
+	color: $color--secondary;
+}
+
+// Animate background image
+@keyframes animateBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.blockIntroduction {
+  // background-image: url(http://placekitten.com/400/200);
+  // background-position: 0px 0px;
+  // background-repeat: repeat-x;
+  // animation: animateBackground 5s linear infinite alternate;
+}

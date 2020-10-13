@@ -1,60 +1,48 @@
-<div class="small-12 large-12 cell">
-	<canvas class="animateIntro text-center">
+<div style="position: relative;">
+	<!-- 01. Blank screen -->
+	<!-- 02. Transition-in orange circles background -->
 
-		<!-- 01. Blank screen -->
 
-		<!-- 02. Transition-in orange circles background -->
+	<section class="boxFirst" style="width:100%;height:600px;position: absolute;z-index:2;background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-circles-col-v1.png');"></section>
+	<section class="boxSecond" style="width:100%;height:600px;position: absolute;z-index:3;background-color:blue;"></section>
 
-		<!-- 03. "Reputations are hard won..." -->
 
-		<!-- 04. "But easily lost" -->
+	<!-- NB. As these use z-index they cover everything underneath, so the link is not live -->
 
-		<section class="blockIntroduction text-center">
-			<h1>Reputations are hard won...<br>
-			But easily lost.</h1>
-		</section>
+	<!-- 03. "Reputations are hard won..." -->
+	<!-- 04. "But easily lost" -->
+	<section class="blockIntroduction">
+		<span class="appearFirst">Reputations are hard won...<br></span>
+		<span class="appearSecond">but easily lost</span>
+	</section>
 
-		<!-- 05. Logo - dot 
-		(with an SVG - can we update the colour of the 'Insight', '.', 'X', but the whole logo in place to hold the position of the dot (not quite centered)) -->
+	<!-- NB. Logo needs updating as has natural padding-right in the SVG -->
 
-		<!-- 05. Logo - Insight -->
+	<!-- 05. Logo - dot 
+	(with an SVG - can we update the colour of the 'Insight', '.', 'X', but the whole logo in place to hold the position of the dot (not quite centered)) -->
+	<!-- 06. Logo - Insight -->
+	<!-- 07. Logo - Insight X -->
+	<!-- 08. Because Reputation is Everything -->
+	<!-- 09. Flare background opens and moves forward -->
+	<!-- 10. 'What we do' appears underneath -->
+	<!-- 11. And... hold -->
+	<section class="blockLogo">
+		<figure class="appearLogo">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg">
+		</figure>
+		<span class="appearStrapline">Because <span class="red">Reputation</span> is Everything</span>
+		<span class="appearLink"><span class="dot--brand"><i class="fas fa-square-full"></i></span><a href="<?php echo get_page_link( get_page_by_path( 'what-we-do' ) ); ?>">What we do</a></span>
+	</section>
 
-		<!-- 06. Logo - X -->
 
-		<section class="blockLogo">
-			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg">
-			</figure>
-		</section>
+	<!-- TO DO
+	1. Sort timings 
+	2. Mobile/tablet versions?
+	3. Animate SVG (nect big area to brainstorm)
+	4. Get logos in place -->
 
-		<!-- 07. Because Reputation is Everything -->
 
-		<section class="blockLogo">
-			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg">
-			</figure>
-			<h2>Because <span class="red">Reputation</span> is Everything</h2>
-		</section>
-
-		<!-- 08. Flare background opens and moves forward -->
-
-		<!-- 09. What we do appears underneath -->
-		<section class="blockLogo">
-			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg">
-			</figure>
-			<h2>Because <span class="red">Reputation</span> is Everything</h2>
-			<p><span class="dot--brand"><i class="fas fa-square-full"></i></span><a href="">What we do</a></p>
-		</section>
-
-		<!-- 10. And... hold -->
-
-		<!-- Other thoughts - 
-			1. Use animate.scss 
-			2. Native CSS / transition 
-			3. Use display:none; and opacity:; for bringing things into shot 
-			4. Can we make a background-image change scale or does it need to be it's own image and we layer on top 
-			5. How does this work on mobile??? -->
-
-	</canvas>
+	<!-- Other thoughts - 
+	1. Can we make a background-image change scale or does it need to be it's own image and we layer on top 
+	2. How does this work on mobile??? -->
 </div>

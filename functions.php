@@ -63,3 +63,10 @@ function insightx_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'insightx_login_logo' );
+
+// Add menu_order to posts
+add_action( 'init', 'wppostorder_init' );
+function wppostorder_init()
+{
+    add_post_type_support( 'post', 'page-attributes' );
+}

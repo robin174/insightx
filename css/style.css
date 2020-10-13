@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@-webkit-keyframes fadeInAndOut {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeInAndOut {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeInAndOut {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeInAndOut {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -28,6 +68,36 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -292,6 +362,302 @@ blockquote {
     margin: 5px;
     font-size: 1.2rem;
     color: #df0914; }
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  60% {
+    transform: scale(1.8);
+    opacity: 1; }
+  100% {
+    transform: scale(1); } }
+
+/* Overall styles */
+.animation {
+  text-align: center;
+  padding-top: 12rem;
+  font-family: "utopia-std", serif; }
+
+.appearFirst {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.appearSecond {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+  -webkit-animation-name: fadeInAndOut;
+  -moz-animation-name: fadeInAndOut;
+  -ms-animation-name: fadeInAndOut;
+  -o-animation-name: fadeInAndOut;
+  animation-name: fadeInAndOut;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.appearLogo {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.appearStrapline {
+  font-size: 2.5rem;
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  -ms-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  animation-delay: 7s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.appearLink {
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.boxFirst {
+  -webkit-animation-name: fadeInAndOut;
+  -moz-animation-name: fadeInAndOut;
+  -ms-animation-name: fadeInAndOut;
+  -o-animation-name: fadeInAndOut;
+  animation-name: fadeInAndOut;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.boxSecond {
+  -webkit-animation-name: fadeInAndOut;
+  -moz-animation-name: fadeInAndOut;
+  -ms-animation-name: fadeInAndOut;
+  -o-animation-name: fadeInAndOut;
+  animation-name: fadeInAndOut;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+span.red {
+  color: #df0914; }
+
+@keyframes animateBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
 
 .off-canvas {
   background-color: #000; }

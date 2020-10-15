@@ -39,7 +39,9 @@ get_header(); ?>
 							    <article>
 							    	<?php get_template_part('templates/template-buildingblocks'); ?>
 								</article>
-							    <p><a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">&larr; Back to &lsquo;This is why it is important&rsquo;</a></p>
+							    <p>&larr;&nbsp;<a href="<?php echo get_page_link( get_page_by_path( 'this-is-why-it-is-important' ) ); ?>" title="Page - This is why it is important">Back to &lsquo;This is why it is important&rsquo;</a></p>
+							    <p><?php next_post_link('%link&nbsp;&rarr; '); ?></p>
+							    <!-- Might be helpful if have to bespoke: https://developer.wordpress.org/reference/functions/next_post_link/-->
 							</main>
 						</div>
 					<?php endwhile; endif; ?>

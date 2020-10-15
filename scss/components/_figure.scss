@@ -1,4 +1,7 @@
 figure {
+	margin: 0;
+	padding: 0;
+
 	&.border--shadow {
 		border: 5px solid white;
 		box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -6,6 +9,23 @@ figure {
 	&.photo {
 		width:100%;
 		margin-bottom: 10px;
+	}
+	&.headshot--team {
+		width: 60%;
+		margin-bottom: $margin--small/2;
+	}
+	& figcaption {
+		margin-top:5px;
+		color: $color--tertiary;
+		& a {
+			color: $color--tertiary;
+			text-decoration: underline;
+			&:hover {
+				color: $color--white;
+				text-decoration: underline;
+			}
+		}
+
 	}
 }
 
@@ -25,6 +45,9 @@ figure {
 	figure {
 		&.photo {
 			width:50%; // For large
+		}
+		&.headshot--team {
+			width: 50%;
 		}
 	}
 }

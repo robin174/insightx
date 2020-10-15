@@ -96,36 +96,6 @@ a.link-div {
 	color:$color--secondary;
 }
 
-figure {
-	margin: 0;
-	padding: 0;
-	& figcaption {
-		margin-top:5px;
-		color: $color--tertiary;
-		& a {
-			color: $color--tertiary;
-			text-decoration: underline;
-			&:hover {
-				color: $color--white;
-				text-decoration: underline;
-			}
-		}
-
-	}
-	&.headshot--team {
-		width: 100%;
-		margin-bottom: $margin--small/2;
-	}
-}
-
-@media (min-width: 750px) {
-	figure {
-		&.headshot--team {
-			width: 50%;
-		}
-	}
-}
-
 img.in--title {
 	width: 15rem;
 	margin-right: 5px;

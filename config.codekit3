@@ -641,6 +641,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/background-red.jpg": {
+		"ft": 16384,
+		"iS": 169341,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/background-red.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/favicon.png": {
 		"ft": 32768,
 		"iS": 266,
@@ -757,6 +768,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/images/insightx-red-foil.jpg": {
+		"ft": 16384,
+		"iS": 230855,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/insightx-red-foil.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/win8-tile-icon.png": {

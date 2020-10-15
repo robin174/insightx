@@ -1,11 +1,12 @@
 main {
-    padding: 0 $padding--small;
+    padding-left: $padding--small;
+    padding-right: $padding--small;
 	padding-top: $padding--small;
 	padding-bottom: $padding--small/2;
 }
 
 @media (min-width: 550px) {
-    main {
+    main  {
         padding: $padding--general 0;
     }
 }
@@ -20,6 +21,11 @@ main {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+}
+
+.post--single {
+    padding-left: $padding--small;
+    padding-right: $padding--small;
 }
 
 // For 'What we do' page

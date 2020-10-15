@@ -21,27 +21,29 @@ get_header(); ?>
 						</figure>
 						<div class="grid-container grid-x grid-padding-x align-center">
 							<main class="main small-12 medium-11 large-10 cell" role="main">
-							    <h1 class="title--article"><?php the_title() ?></h1>
-							    <section class="data--entry">
-							    	By <?php the_author(); ?>&nbsp;-&nbsp;<?php the_time('F j, Y'); ?>
-								</section>
-								<section class="block--standfirst">
-									 <?php if( get_field('include_standfirsts') ): ?>
-									 	<?php if( have_rows('standfirst_list') ): // Repeater Field Name ?>
-					                    <ul class="standfirst"> 
-					                        <?php while( have_rows('standfirst_list') ): the_row(); ?>
-					                            <li><span><?php the_sub_field('standfirst_point'); ?></span></li>
-					                        <?php endwhile; ?>
-					                    </ul>
-					                    <?php endif; ?>
-									 <?php endif; ?>
-							    </section>
-							    <article>
-							    	<?php get_template_part('templates/template-buildingblocks'); ?>
-								</article>
-							    <p>&larr;&nbsp;<a href="<?php echo get_page_link( get_page_by_path( 'this-is-why-it-is-important' ) ); ?>" title="Page - This is why it is important">Back to &lsquo;This is why it is important&rsquo;</a></p>
-							    <p><?php next_post_link('%link&nbsp;&rarr; '); ?></p>
-							    <!-- Might be helpful if have to bespoke: https://developer.wordpress.org/reference/functions/next_post_link/-->
+								<div class="post--single"> 
+								    <h1 class="title--article"><?php the_title() ?></h1>
+								    <section class="data--entry">
+								    	By <?php the_author(); ?>&nbsp;-&nbsp;<?php the_time('F j, Y'); ?>
+									</section>
+									<section class="block--standfirst">
+										 <?php if( get_field('include_standfirsts') ): ?>
+										 	<?php if( have_rows('standfirst_list') ): // Repeater Field Name ?>
+						                    <ul class="standfirst"> 
+						                        <?php while( have_rows('standfirst_list') ): the_row(); ?>
+						                            <li><span><?php the_sub_field('standfirst_point'); ?></span></li>
+						                        <?php endwhile; ?>
+						                    </ul>
+						                    <?php endif; ?>
+										 <?php endif; ?>
+								    </section>
+								    <article>
+								    	<?php get_template_part('templates/template-buildingblocks'); ?>
+									</article>
+								    <p>&larr;&nbsp;<a href="<?php echo get_page_link( get_page_by_path( 'this-is-why-it-is-important' ) ); ?>" title="Page - This is why it is important">Back to &lsquo;This is why it is important&rsquo;</a></p>
+								    <p><?php next_post_link('%link&nbsp;&rarr; '); ?></p>
+								    <!-- Might be helpful if have to bespoke: https://developer.wordpress.org/reference/functions/next_post_link/-->
+								</div>
 							</main>
 						</div>
 					<?php endwhile; endif; ?>

@@ -1,7 +1,6 @@
 /* Variables */
 $animation-width: 100%;
 $animation-height: 800px;
-
 // Seconds can be decimal e.g. 2.3s
 
 
@@ -11,183 +10,6 @@ $animation-height: 800px;
 	text-align: center;
 	font-family: $font--family-brand;
 }
-
-
-/* Box 01 : Target */
-section.boxOne {
-	z-index: 1;
-	width: $animation-width;
-	height: $animation-height;
-	position: absolute;
-	& .boxOne_inner {
-		width: $animation-width;
-		height: $animation-height;
-		background-position: center;
-		background-image: url('../images/insightx-circles-col-v1.png');
-		background-repeat: no-repeat;
-		@include fadeInAndOut(
-			$duration: 3s,
-			$count: 1,
-			$delay: 2s,
-		);
-	}
-}
-
-
-
-
-
-section.boxTwo {
-	z-index: 2;
-	width: $animation-width;
-	height: $animation-height;
-	position: absolute;
-	padding: 100px 0;
-}
-
-
-
-
-
-/* Box 03 : Logo anaimation */
-section.boxThree {
-	z-index: 3;
-	width: $animation-width;
-	height: $animation-height;
-	position: absolute;
-	padding-top: 250px;
-	& .boxThree_logo {
-		
-		margin: 0 auto;
-	}
-	& .logo-animate {
-		& g.an1 {
-			@include fadeIn(
-				$duration: 2s,
-				$count: 1,
-				$delay: 5s,
-			);
-		}
-		& g.an2 {
-			@include fadeIn(
-				$duration: 2s,
-				$count: 1,
-				$delay: 6s,
-			);
-		}
-		& g.an3 {
-			@include fadeIn(
-				$duration: 2s,
-				$count: 1,
-				$delay: 7s,
-			);
-		}
-	}
-	& div span.midText {
-		display:block;
-		font-size: 3rem;
-		line-height: 1;
-		margin: 0;
-		@include fadeIn(
-			$duration: 2s,
-			$count: 1,
-			$delay: 8s,
-		);
-	}
-	& div span.ctaText {
-		display:block;
-		font-size: 2rem;
-		padding-top: 150px;
-		line-height: 1;
-		margin: 0;
-		@include fadeIn(
-			$duration: 2s,
-			$count: 1,
-			$delay: 10s,
-		);
-	}
-}
-
-
-span.red {
-	color: $color--secondary;
-}
-
-
-
-/* Box 04 : Logo anaimation */
-section.boxFour {
-	z-index: 4;
-	width: $animation-width;
-	height: $animation-height;
-	position: absolute;
-	overflow: hidden;
-	@include fadeIn(
-		$duration: 2s,
-		$count: 1,
-		$delay: 4s,
-	);
-}
-
-
-@include keyframes(imageScale) {
-	0% {
-		transform: scale(1,1);
-	}
-	33% {
-		transform: scale(1,1);
-	}
-	34% {
-		transform: scale(1.1,1.1);
-	}
-	66% {
-		transform: scale(1.1,1.1);
-	}
-	67% {
-		transform: scale(1.2,1.2);
-	}
-	100% {
-		transform: scale(1.2,1.2);
-	}
-}
-
-@mixin imageScale($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(imageScale);
-	@include count($count);
-	@include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
-}
-
-
-
-.innerBoxFoil {
-	width: $animation-width;
-	height: $animation-height;
-	@include imageScale (
-		$duration: 3s,
-		$count: 1,
-		$delay: 5s,
-	)
-}
-
-section.boxFive {
-	z-index: 5;
-	width:$animation-width;
-	height:$animation-height;
-	position: absolute;
-	padding-top: 250px;
-	@include fadeIn(
-		$duration: 2s,
-		$count: 1,
-		$delay: 7s,
-	);
-}
-
-
-
 
 .largeText {
 	display:block;
@@ -214,15 +36,182 @@ section.boxFive {
 	}
 }
 
-
 .dispLogo {
 	margin: 0 auto;
 	width: 400px;
 }
 
+/* Box 01 : Target (0:00 - 04:00) */
+section.boxOne {
+	z-index: 1;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	& .boxOne_inner {
+		width: $animation-width;
+		height: $animation-height;
+		background-position: center;
+		background-image: url('../images/insightx-circles-col-v1.png');
+		background-repeat: no-repeat;
+		@include fadeInAndOut(
+			$duration: 3s,
+			$count: 1,
+			$delay: 1s,
+		);
+	}
+}
+
+/* Box 02 (5:00 - 10:00) */
+section.boxTwo {
+	z-index: 2;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	padding: 250px 0;
+	@include fadeOut(
+		$duration: 1s,
+		$count: 1,
+		$delay: 9s,
+	);
+	& .largeText.first {
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 5s,
+		);
+	}
+	& .largeText.second {
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 7s,
+		);
+	}
+}
+
+/* Box 03 : Logo anaimation (13:00 - 16:00) */
+section.boxThree {
+	z-index: 3;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	overflow: hidden;
+	@include fadeIn (
+		$duration: 1s,
+		$count: 1,
+		$delay: 13s,
+	);
+	& .innerBoxFoil {
+		width: $animation-width;
+		height: $animation-height;
+		@include imageScale (
+			$duration: 3s,
+			$count: 1,
+			$delay: 14s,
+		);
+	}
+}
+
+/* Box 04 : Logo animation (12:00 - 14:00) */
+section.boxFour {
+	z-index: 4;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	padding-top: 250px;
+	& .boxFour_logo {
+		margin: 0 auto;
+	}
+	& span.red {
+		color: $color--secondary;
+	}
+	& .logo-animate {
+		& g.an1 {
+			@include fadeIn(
+				$duration: 2s,
+				$count: 1,
+				$delay: 10s,
+			);
+		}
+		& g.an2 {
+			@include fadeIn(
+				$duration: 2s,
+				$count: 1,
+				$delay: 11s,
+			);
+		}
+		& g.an3 {
+			@include fadeIn(
+				$duration: 2s,
+				$count: 1,
+				$delay: 12s,
+			);
+		}
+	}
+	& div span.midText {
+		font-weight: $font--bold;
+		display:block;
+		font-size: 3rem;
+		line-height: 1;
+		margin: 0;
+		text-shadow: 0 0 7px rgba(0,0,0,0.5);
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 13s,
+		);
+	}
+	& div span.ctaText {
+		display:block;
+		font-size: 2rem;
+		padding-top: 150px;
+		line-height: 1;
+		margin: 0;
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 15s,
+		);
+		& a {
+			color: rgba(255,255,255,1);
+			&:hover {
+				color: rgba(255,255,255,0.7);
+			}
+		}
+	}
+}
 
 
 
+
+/* Misc: to delete */
+section.boxFive {
+	z-index: 4;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	
+	@include fadeIn(
+		$duration: 2s,
+		$count: 1,
+		$delay: 4s,
+	);
+}
+
+section.boxSix {
+	z-index: 5;
+	width:$animation-width;
+	height:$animation-height;
+	position: absolute;
+	padding-top: 250px;
+	@include fadeIn(
+		$duration: 2s,
+		$count: 1,
+		$delay: 7s,
+	);
+}
+
+/* Misc: to delete */
 .appearFirst {
 	font-size: 4rem;
 	line-height: 1;
@@ -232,7 +221,6 @@ section.boxFive {
 		// $count: 1,
 	// );
 }
-
 .appearSecond {
 	font-size: 4rem;
 	line-height: 1;
@@ -243,7 +231,6 @@ section.boxFive {
 		//$delay: 4s,
 	//);
 }
-
 .appearLogo {
 	width: 400px;
 	margin: 0 auto;
@@ -254,7 +241,6 @@ section.boxFive {
 		$delay: 5s,
 	);
 }
-
 .appearStrapline {
 	font-size: 2.5rem;
 	display: block;
@@ -264,7 +250,6 @@ section.boxFive {
 		$delay: 7s,
 	);
 }
-
 .appearLink {
 	display: block;
 	@include fadeIn(
@@ -273,13 +258,6 @@ section.boxFive {
 		$delay: 8s,
 	);
 }
-
-
-
-
-
-
-
 // Animate background image
 @keyframes animateBackground {
   from {
@@ -288,11 +266,4 @@ section.boxFive {
   to {
     background-position: 100% 0;
   }
-}
-
-.blockIntroduction {
-  // background-image: url(http://placekitten.com/400/200);
-  // background-position: 0px 0px;
-  // background-repeat: repeat-x;
-  // animation: animateBackground 5s linear infinite alternate;
 }

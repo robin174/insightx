@@ -1289,6 +1289,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/scss/animate/_extra/_imageScale.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/animate/css/_imageScale.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/scss/animate/_fading-entrances/_fadeIn.scss": {
 		"aP": 0,
 		"bl": 0,

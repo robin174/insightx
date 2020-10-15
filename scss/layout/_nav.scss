@@ -5,7 +5,7 @@
 .top-bar {
 	// border-bottom: 7px solid $color--primary-black;
 	// padding: $padding--small/2 $padding--small;
-	font-family: $font--family-body;
+	font-family: $font--family-body-alt;
 	padding: $padding--small;
 	font-weight: $font--medium;
 }
@@ -25,7 +25,7 @@
 }
 
 .top-bar a, .menu a {
-	font-family: $font--family-body;
+	font-family: $font--family-body-alt;
 	font-weight: $font--medium;
 	color: $color--tertiary;
 }

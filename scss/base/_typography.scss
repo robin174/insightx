@@ -54,7 +54,7 @@ h2 {
         margin-bottom: 0;
     }
     &.post--title {
-        font-family: $font--family-body;
+        font-family: $font--family-body-alt;
         font-size: 1.6rem;
         & a {
             color: rgba(255,255,255,0.7);
@@ -122,7 +122,7 @@ ul {
         margin-left: $margin--general;
         & li {
             font-size: 1.1rem;
-            font-family: $font--family-body;
+            font-family: $font--family-body-alt;
             font-weight: $font--regular;
             margin-bottom: $margin--small/2;
         }

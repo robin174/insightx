@@ -23,22 +23,22 @@
 	*/?>
 
 	<section class="boxThree_a">
-		<div class="innerBoxFoil_a" style="transform: scale(1,1);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil.jpg');background-position: center;background-repeat: no-repeat;">
+		<div class="innerBoxFoil_a" style="transform: scale(1,1);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil-new.jpg');background-position: center;background-repeat: no-repeat;">
 		</div>
 	</section>
 
 	<section class="boxThree_b">
-		<div class="innerBoxFoil_b" style="transform: scale(1.25,1.25);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil.jpg');background-position: center;background-repeat: no-repeat;">
+		<div class="innerBoxFoil_b" style="transform: scale(1.2,1.2);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil-new.jpg');background-position: center;background-repeat: no-repeat;">
 		</div>
 	</section>
 
 	<section class="boxThree_c">
-		<div class="innerBoxFoil_c" style="transform: scale(1.5,1.5);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil.jpg');background-position: center;background-repeat: no-repeat;">
+		<div class="innerBoxFoil_c" style="transform: scale(1.4,1.4);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil-new.jpg');background-position: center;background-repeat: no-repeat;">
 		</div>
 	</section>
 
 	<section class="boxThree_d">
-		<div class="innerBoxFoil_d" style="transform: scale(1.75,1.75);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil.jpg');background-position: center;background-repeat: no-repeat;">
+		<div class="innerBoxFoil_d" style="transform: scale(1.6,1.6);background-image: url('<?php echo get_template_directory_uri(); ?>/images/insightx-red-foil-new.jpg');background-position: center;background-repeat: no-repeat;">
 		</div>
 	</section>
 

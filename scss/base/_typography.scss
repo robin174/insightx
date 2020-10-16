@@ -107,13 +107,14 @@ p {
     &.footer--sm {
         font-weight: $font--medium;
         color: $color--white;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
     &.copyright {
         font-weight: $font--medium;
         color: $color--tertiary;
         margin-top: 5px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 

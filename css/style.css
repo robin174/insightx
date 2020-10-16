@@ -197,10 +197,12 @@ body {
 /* Base styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
+  font-family: "ff-zwo-web-pro", sans-serif;
   background-color: #000;
   color: #fff; }
 
 a {
+  font-family: "ff-zwo-web-pro", sans-serif;
   transition: 0.3s;
   color: #798d91; }
   a:link {
@@ -367,12 +369,13 @@ p {
   p.footer--sm {
     font-weight: 600;
     color: #fff;
-    font-size: 0.8rem; }
+    font-size: 0.9rem;
+    margin-bottom: 10px; }
   p.copyright {
     font-weight: 600;
     color: #798d91;
     margin-top: 5px;
-    font-size: 0.7rem; }
+    font-size: 0.8rem; }
 
 ul.bullet--copy {
   margin-left: 3rem; }
@@ -1358,8 +1361,13 @@ footer, .footer {
   footer .grid-container, .footer .grid-container {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.25); }
-  footer p:last-child, .footer p:last-child {
-    margin-bottom: 0; }
+  footer .foot--contact a, .footer .foot--contact a {
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: underline; }
+    footer .foot--contact a:hover, .footer .foot--contact a:hover {
+      color: #798d91;
+      text-decoration: underline; }
 
 @media (min-width: 550px) {
   footer, .footer {
@@ -1373,6 +1381,12 @@ footer, .footer {
     font-size: 3rem;
     color: #fff; }
   .blockHome .red {
+    color: #df0914; }
+
+.page-template-page-contact a {
+  color: #fff;
+  text-decoration: underline; }
+  .page-template-page-contact a:hover {
     color: #df0914; }
 
 .form--contact form label {

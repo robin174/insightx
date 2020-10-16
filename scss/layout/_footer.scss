@@ -6,8 +6,16 @@ footer, .footer {
 		padding-top: $padding--small;
 		border-top: 1px solid rgba(255,255,255,0.25);
 	}
-	& p:last-child {
-		margin-bottom: 0;
+	.foot--contact {
+		& a {
+			font-size: 0.9rem;
+			color: $color--white;
+			text-decoration: underline;
+			&:hover {
+				color: $color--tertiary;
+				text-decoration: underline;
+			}
+		}
 	}
 }
 

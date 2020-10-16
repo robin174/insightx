@@ -54,7 +54,7 @@ section.boxOne {
 		background-image: url('../images/insightx-circles-col-v1.png');
 		background-repeat: no-repeat;
 		@include fadeInAndOut(
-			$duration: 3s,
+			$duration: 4s,
 			$count: 1,
 			$delay: 1s,
 		);
@@ -71,50 +71,96 @@ section.boxTwo {
 	@include fadeOut(
 		$duration: 1s,
 		$count: 1,
-		$delay: 9s,
+		$delay: 4.5s,
 	);
 	& .largeText.first {
 		@include fadeIn(
-			$duration: 2s,
+			$duration: 1s,
 			$count: 1,
-			$delay: 5s,
+			$delay: 2.5s,
 		);
 	}
 	& .largeText.second {
 		@include fadeIn(
-			$duration: 2s,
+			$duration: 1s,
 			$count: 1,
-			$delay: 7s,
+			$delay: 3.5s,
 		);
 	}
 }
 
-/* Box 03 : Logo anaimation (13:00 - 16:00) */
-section.boxThree {
-	z-index: 3;
+section.boxThree_a {
+	z-index: 4;
 	width: $animation-width;
 	height: $animation-height;
 	position: absolute;
 	overflow: hidden;
 	@include fadeIn (
-		$duration: 1s,
+		$duration: 2s,
 		$count: 1,
-		$delay: 13s,
+		$delay: 6s,
 	);
-	& .innerBoxFoil {
+	& .innerBoxFoil_a {
 		width: $animation-width;
 		height: $animation-height;
-		@include imageScale (
-			$duration: 3s,
-			$count: 1,
-			$delay: 14s,
-		);
 	}
 }
 
+section.boxThree_b {
+	z-index: 5;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	overflow: hidden;
+	@include fadeIn (
+		$duration: 2s,
+		$count: 1,
+		$delay: 7s,
+	);
+	& .innerBoxFoil_b {
+		width: $animation-width;
+		height: $animation-height;
+	}
+}
+
+section.boxThree_c {
+	z-index: 6;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	overflow: hidden;
+	@include fadeIn (
+		$duration: 2s,
+		$count: 1,
+		$delay: 8s,
+	);
+	& .innerBoxFoil_c {
+		width: $animation-width;
+		height: $animation-height;
+	}
+}
+
+section.boxThree_d {
+	z-index: 7;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	overflow: hidden;
+	@include fadeIn (
+		$duration: 2s,
+		$count: 1,
+		$delay: 9s,
+	);
+	& .innerBoxFoil_d {
+		width: $animation-width;
+		height: $animation-height;
+	}
+}
+
+
 /* Box 04 : Logo animation (12:00 - 14:00) */
 section.boxFour {
-	z-index: 4;
+	z-index: 8;
 	width: $animation-width;
 	height: $animation-height;
 	position: absolute;
@@ -130,21 +176,21 @@ section.boxFour {
 			@include fadeIn(
 				$duration: 2s,
 				$count: 1,
-				$delay: 10s,
+				$delay: 5s,
 			);
 		}
 		& g.an2 {
 			@include fadeIn(
 				$duration: 2s,
 				$count: 1,
-				$delay: 11s,
+				$delay: 6s,
 			);
 		}
 		& g.an3 {
 			@include fadeIn(
 				$duration: 2s,
 				$count: 1,
-				$delay: 12s,
+				$delay: 7s,
 			);
 		}
 	}
@@ -158,7 +204,7 @@ section.boxFour {
 		@include fadeIn(
 			$duration: 2s,
 			$count: 1,
-			$delay: 13s,
+			$delay: 8s,
 		);
 	}
 	& div span.ctaText {
@@ -170,7 +216,7 @@ section.boxFour {
 		@include fadeIn(
 			$duration: 2s,
 			$count: 1,
-			$delay: 15s,
+			$delay: 9s,
 		);
 		& a {
 			color: rgba(255,255,255,1);
@@ -182,6 +228,30 @@ section.boxFour {
 }
 
 
+
+
+/* Box 03 : Background foil (13:00 - 16:00) */
+section.boxThree {
+	z-index: 3;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	overflow: hidden;
+	@include fadeIn (
+		$duration: 1s,
+		$count: 1,
+		$delay: 8s,
+	);
+	& .innerBoxFoil {
+		width: $animation-width;
+		height: $animation-height;
+		@include imageScale (
+			$duration: 3s,
+			$count: 1,
+			$delay: 9s,
+		);
+	}
+}
 
 
 /* Misc: to delete */

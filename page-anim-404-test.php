@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Page - Animation
+Template Name: Page - Animation 404 (Test)
 */
 get_header(); ?>
 
 	<div class="content">
         <div class="animation">
-            <?php get_template_part('templates/introduction'); ?>
+            <?php get_template_part('templates/animation-home-test'); ?>
         </div>
 	</div> <!-- end #content -->
 

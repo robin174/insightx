@@ -819,12 +819,28 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
-	"/page-animation.php": {
+	"/Misc/page-homepage-old.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-animation.php",
+		"oAP": "/Misc/page-homepage-old.php",
+		"oF": 0
+		},
+	"/page-anim-404-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-anim-404-test.php",
+		"oF": 0
+		},
+	"/page-anim-home-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-anim-home-test.php",
 		"oF": 0
 		},
 	"/page-blog.php": {
@@ -2491,12 +2507,28 @@
 		"oAP": "/template-full-width.php",
 		"oF": 0
 		},
-	"/templates/introduction.php": {
+	"/templates/animation-404-test.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/introduction.php",
+		"oAP": "/templates/animation-404-test.php",
+		"oF": 0
+		},
+	"/templates/animation-home-live.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/animation-home-live.php",
+		"oF": 0
+		},
+	"/templates/animation-home-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/animation-home-test.php",
 		"oF": 0
 		},
 	"/templates/template-buildingblocks.php": {

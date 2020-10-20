@@ -1,4 +1,4 @@
-<div style="position: relative;">
+<div class="animationTest animationHome" style="position: relative;">
 
 	<!-- Box 01: Complete -->
 	<section class="boxOne">

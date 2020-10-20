@@ -13,6 +13,17 @@ get_header(); ?>
 					 <section>
 						<?php get_template_part('templates/template-buildingblocks'); ?>
 					</section>
+					<section>
+						<?php if(is_page('privacy-policy')): { ?>
+							<div class="small-12 medium-10 large-10 cell">
+						        <p style="font-size:90%;">
+						        	<br>
+						            ---<br>
+						            <i>This page was last updated: <?php the_modified_date(); ?></i>
+						        </p>
+							</div>
+						<?php } endif; ?>
+					</section>
                 </div>
             </div>
 

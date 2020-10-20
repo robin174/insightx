@@ -17,8 +17,9 @@ get_header(); ?>
                 		<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/insightx-logo-white-n.svg" width="400px">
 						</figure>
-						<h2>Because <span class="red">Reputation</span> is Everything</h2>
-						<p><span class="dot--brand"><i class="fas fa-square-full"></i></span><a href="<?php echo get_page_link( get_page_by_path( 'what-we-do' ) ); ?>">What we do</a></p>
+						<h2>404.</h2>
+						<p style="color:#798d91;">The article you were looking for was not found, but maybe try looking again</p>
+						<p>&larr;&nbsp;<a style="color:#df0914;" href="<?php echo get_page_link( get_page_by_path( 'this-is-why-it-is-important' ) ); ?>">Back to &lsquo;This is why it is important&rsquo;</a></p>
                 	</section>
 
                 	<?php /*

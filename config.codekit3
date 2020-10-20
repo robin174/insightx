@@ -652,25 +652,33 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/favicon.ico",
+		"oF": 0
+		},
 	"/images/favicon.png": {
 		"ft": 32768,
-		"iS": 266,
+		"iS": 315,
 		"oA": 0,
 		"oAP": "/images/favicon.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/images/favicon@2x.png": {
 		"ft": 32768,
-		"iS": 365,
+		"iS": 432,
 		"oA": 0,
 		"oAP": "/images/favicon@2x.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -776,6 +784,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/insightx-red-foil-new.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/insightx-red-foil-original.jpg": {
+		"ft": 16384,
+		"iS": 290769,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/insightx-red-foil-original.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

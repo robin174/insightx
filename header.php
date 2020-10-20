@@ -31,9 +31,6 @@
 		<!-- Typekit: Utopia -->
 		<link rel="stylesheet" href="https://use.typekit.net/ntc5nyr.css">
 
-		<!-- Google Font: Open Sans -->
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
 		<!-- Google Font / Alt: FF Zwo -->
 		<link rel="stylesheet" href="https://use.typekit.net/ntc5nyr.css">
 

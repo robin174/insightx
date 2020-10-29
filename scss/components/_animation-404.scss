@@ -11,7 +11,7 @@ $animation-height: 840px;
 }
 
 
-section.boxOne-four{
+section.boxOne-four {
 	z-index: 1;
 	width: $animation-width;
 	height: $animation-height;
@@ -33,8 +33,9 @@ section.boxOne-four{
 	}
 	& span.targetZero {
 		// Zero image
-		font-size: 24rem;
+		font-size: 10rem;
 		& img {
+			width: 180px;
 			margin-top: -40px;
 		}
 		@include fadeIn(
@@ -44,7 +45,7 @@ section.boxOne-four{
 	}
 	& span.numberFour {
 		color: $color--tertiary;
-		font-size: 24rem;
+		font-size: 12rem;
 		// these appear after 1 second
 		@include fadeIn(
 			$duration: 3s,
@@ -56,6 +57,8 @@ section.boxOne-four{
 		color: $color--tertiary;
 		font-family: $font--family-body-alt;
 		font-size: 1.6rem;
+		padding: 0 $padding--general;
+		margin-bottom: $margin--small;
 		// this comes in after 2 seconds
 		// 'The page you were looking for'
 		@include fadeIn(
@@ -68,6 +71,7 @@ section.boxOne-four{
 		color: $color--secondary;
 		font-family: $font--family-body-alt;
 		font-size: 1.6rem;
+		padding: 0 $padding--general;
 		& a {
 			color: $color--secondary;
 			&:hover {
@@ -81,5 +85,26 @@ section.boxOne-four{
 			$count: 1,
 			$delay: 4s,
 		);
+	}
+}
+
+
+@media (min-width: 820px) {
+	section.boxOne-four {
+		& span.targetZero {
+			font-size: 24rem;
+			& img {
+				width: 420px;
+			}
+		}
+		& span.numberFour {
+			font-size: 24rem;
+		}
+		& .underBoxFours-text01 {
+			padding: 0;
+		}
+		& .underBoxFours-text02 {
+			padding: 0;
+		}
 	}
 }

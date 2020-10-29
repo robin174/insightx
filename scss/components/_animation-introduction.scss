@@ -67,7 +67,7 @@ section.boxTwo {
 	width: $animation-width;
 	height: $animation-height;
 	position: absolute;
-	padding: 250px 0;
+	padding: 100px 0;
 	@include fadeOut(
 		$duration: 1s,
 		$count: 1,
@@ -88,6 +88,13 @@ section.boxTwo {
 		);
 	}
 }
+
+@media (min-width: 700px) {
+	section.boxTwo {
+		padding: 250px 0;
+	}
+}
+
 
 section.boxThree_a {
 	z-index: 4;
@@ -164,7 +171,7 @@ section.boxFour {
 	width: $animation-width;
 	height: $animation-height;
 	position: absolute;
-	padding-top: 250px;
+	padding: 100px 0;
 	& .boxFour_logo {
 		margin: 0 auto;
 	}
@@ -201,6 +208,7 @@ section.boxFour {
 		line-height: 1;
 		margin: 0;
 		text-shadow: 0 0 7px rgba(0,0,0,0.5);
+		padding: 0 25px;
 		@include fadeIn(
 			$duration: 2s,
 			$count: 1,
@@ -210,7 +218,7 @@ section.boxFour {
 	& div span.ctaText {
 		display:block;
 		font-size: 2rem;
-		padding-top: 150px;
+		padding-top: 50px;
 		line-height: 1;
 		margin: 0;
 		@include fadeIn(
@@ -223,6 +231,18 @@ section.boxFour {
 			&:hover {
 				color: rgba(255,255,255,0.7);
 			}
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	section.boxFour {
+		padding: 250px 0;
+		& div span.midText {
+			padding: 0;
+		}
+		div span.ctaText {
+			padding-top: 150px;
 		}
 	}
 }
@@ -251,34 +271,6 @@ section.boxThree {
 			$delay: 9s,
 		);
 	}
-}
-
-
-/* Misc: to delete */
-section.boxFive {
-	z-index: 4;
-	width: $animation-width;
-	height: $animation-height;
-	position: absolute;
-	
-	@include fadeIn(
-		$duration: 2s,
-		$count: 1,
-		$delay: 4s,
-	);
-}
-
-section.boxSix {
-	z-index: 5;
-	width:$animation-width;
-	height:$animation-height;
-	position: absolute;
-	padding-top: 250px;
-	@include fadeIn(
-		$duration: 2s,
-		$count: 1,
-		$delay: 7s,
-	);
 }
 
 /* Misc: to delete */

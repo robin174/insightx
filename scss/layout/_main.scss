@@ -85,10 +85,16 @@ main {
     }
 }
 
+@keyframes animatedBackground {
+    from { background-position: 0 500%; }
+    to { background-position:  0 0; }
+}
+
 .page-template-page-how {
     background-image: url(../images/insightx-circlesv6.png);
     background-repeat: no-repeat;
-    background-position: center -10px;  
+    background-position: center -10px;
+    // animation: animatedBackground 3s linear;
 }
 
 .col--baseline {

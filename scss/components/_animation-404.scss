@@ -1,0 +1,85 @@
+/* Variables */
+$animation-width: 100%; // was 100%
+$animation-height: 840px;
+// Seconds can be decimal e.g. 2.3s
+
+
+.animation-404 {
+	height: $animation-height;
+	text-align: center;
+	font-family: $font--family-brand;
+}
+
+
+section.boxOne-four{
+	z-index: 1;
+	width: $animation-width;
+	height: $animation-height;
+	position: absolute;
+	& .boxOne-four_inner {
+		width: $animation-width;
+		height: $animation-height;
+		background-position: center;
+		background-image: url('../images/insightx-circles-col-v1.png');
+		background-repeat: no-repeat;
+		@include fadeIn(
+			$duration: 6s,
+			$count: 1,
+			$delay: 1s,
+		);
+	}
+	& .boxFours-target {
+		// this comes in immediately
+	}
+	& span.targetZero {
+		// Zero image
+		font-size: 24rem;
+		& img {
+			margin-top: -40px;
+		}
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+		);
+	}
+	& span.numberFour {
+		color: $color--tertiary;
+		font-size: 24rem;
+		// these appear after 1 second
+		@include fadeIn(
+			$duration: 3s,
+			$count: 1,
+			$delay: 2s,
+		);
+	}
+	& .underBoxFours-text01 {
+		color: $color--tertiary;
+		font-family: $font--family-body-alt;
+		font-size: 1.6rem;
+		// this comes in after 2 seconds
+		// 'The page you were looking for'
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 3s,
+		);
+	}
+	& .underBoxFours-text02 {
+		color: $color--secondary;
+		font-family: $font--family-body-alt;
+		font-size: 1.6rem;
+		& a {
+			color: $color--secondary;
+			&:hover {
+				color: $color--white;
+			}
+		}
+		// this comes in after 3 seconds
+		// 'Back to why this is important'
+		@include fadeIn(
+			$duration: 2s,
+			$count: 1,
+			$delay: 4s,
+		);
+	}
+}

@@ -2581,6 +2581,14 @@
 		"oAP": "/template-full-width.php",
 		"oF": 0
 		},
+	"/templates/animation-404-live.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/animation-404-live.php",
+		"oF": 0
+		},
 	"/templates/animation-404-test.php": {
 		"cB": 0,
 		"ft": 8192,

@@ -8,6 +8,6 @@ get_header(); ?>
         <div class="animation">
             <?php get_template_part('templates/animation-404-test'); ?>
         </div>
-	</div> <!-- end #content -->
+	</div><!-- end #content -->
 
 <?php get_footer(); ?>

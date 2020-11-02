@@ -173,6 +173,7 @@ section.boxFour {
 	position: absolute;
 	padding: 100px 0;
 	& .boxFour_logo {
+		width: 300px;
 		margin: 0 auto;
 	}
 	& span.red {
@@ -238,6 +239,9 @@ section.boxFour {
 @media (min-width: 700px) {
 	section.boxFour {
 		padding: 250px 0;
+		& .boxFour_logo {
+			width: 400px;
+		}
 		& div span.midText {
 			padding: 0;
 		}

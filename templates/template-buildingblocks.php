@@ -19,19 +19,36 @@
     <?php if(get_row_layout() == 'block_image'): // layout: Image / Caption - Full Width ?>
         <div class="grid-container grid-x">
             <div class="small-12 medium-12 large-12 cell">
-                <figure class="">
-                    <img class="" src="<?php the_sub_field('unit_image'); ?>" alt="" />
-                    <?php if( get_sub_field('unit_image_caption') ): ?>
-                        <figcaption class="caption"><?php the_sub_field('unit_image_caption'); ?></figcaption>
-                    <?php endif; ?>
-                </figure>
-                <p>This pulls in the image credit - but needs placement
+                <figure >
+                    <img src="<?php the_sub_field('unit_image'); ?>" alt="" />
                     <?php if( get_sub_field('unit_image_credit') ): ?>
                         <figcaption class="caption"><?php the_sub_field('unit_image_credit'); ?></figcaption>
                     <?php endif; ?>
-                </p>
+                </figure>
             </div>
         </div>
+    <?php endif; ?>
+
+    <?php if(get_row_layout() == 'block_video'): // layout: Video ?>
+        <?php if(get_sub_field('unit_site') == "vimeo"): // If Vimeo Selected ?>
+            <div class="grid-container grid-x">
+                <div class="medium-offset-1 small-12 large-10 medium-10 cell">
+                    <div class="responsive-embed vimeo">
+                        <iframe width="640" height="360" src="//player.vimeo.com/video/<?php the_sub_field('unit_vimeo_link'); ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if(get_sub_field('unit_site') == "youtube"): // If YouTube Selected ?>
+            <div class="grid-container grid-x">
+                <div class="medium-offset-1 small-12 large-10 medium-10 cell">
+                    <div class="responsive-embed youtube">
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/<?php the_sub_field('unit_youtube_link'); ?>" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
 
     <?php if(get_row_layout() == 'block_quote'): // layout: Blockquote ?>

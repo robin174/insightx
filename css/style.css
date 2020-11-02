@@ -397,6 +397,9 @@ figure {
   figure.headshot--team {
     width: 60%;
     margin-bottom: 0.75rem; }
+  figure.image-post {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
   figure figcaption {
     margin-top: 5px;
     color: #798d91; }
@@ -1699,6 +1702,10 @@ section.unit_footnote {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     font-style: italic; }
+
+.responsive-embed {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem; }
 
 footer, .footer {
   margin-top: 0;

@@ -14,6 +14,10 @@ figure {
 		width: 60%;
 		margin-bottom: $margin--small/2;
 	}
+	&.image-post {
+		margin-top: $margin--small;
+		margin-bottom: $margin--small;
+	}
 	& figcaption {
 		margin-top:5px;
 		color: $color--tertiary;

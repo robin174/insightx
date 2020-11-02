@@ -26,6 +26,12 @@ main {
 .post--single {
     padding-left: $padding--small;
     padding-right: $padding--small;
+    & a {
+        color: $color--tertiary;
+        &:hover {
+            color: $color--secondary;
+        }
+    }
 }
 
 // For 'What we do' page

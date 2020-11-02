@@ -1545,6 +1545,10 @@ main {
 .post--single {
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
+  .post--single a {
+    color: #798d91; }
+    .post--single a:hover {
+      color: #df0914; }
 
 .page-template-page-what .section--part-01 h2 {
   font-size: 2rem;

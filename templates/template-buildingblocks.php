@@ -15,6 +15,24 @@
     <?php if(get_row_layout() == 'block_paragraph'): // Paragraph: Full Width ?>
         <?php the_sub_field('unit_paragraph'); ?>
     <?php endif; ?>
+
+    <?php if(get_row_layout() == 'block_wysiwyg'): // layout: WYSIWYG ?>
+        <section class="unit_wysiwyg">
+            <?php the_sub_field('unit_wysiwyg'); ?>
+        </section>
+    <?php endif; ?>
+
+    <?php if(get_row_layout() == 'block_pdf'): // layout: PDF ?>
+        <section class="unit_pdf">
+            <div class="grid-x">
+                <div class="small-8 large-6 medium-6 cell">
+                    <figure class="image-post">
+                        <a href="<?php the_sub_field('unit_pdf'); ?>" target="_blank"><img src="<?php the_sub_field('unit_visual'); ?>" alt="" /></a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
     
     <?php if(get_row_layout() == 'block_image'): // layout: Image / Caption - Full Width ?>
         <figure class="image-post">

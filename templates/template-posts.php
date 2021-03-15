@@ -3,7 +3,7 @@
 		<div class="box--content">
     		<div class="box--table">
     			<div class="box--table-cell">
-			        <h2 class="post--title"><span class="dot--brand"><?php /*<i class="fas fa-square-full"> */ ?></i></span><?php the_title(); ?></h2>
+			        <h2 class="post--title"><span class="dot--brand"><?php /*<i class="fas fa-square-full"></i> */ ?></span><?php the_title(); ?></h2>
 				</div>
 			</div>
 		</div>

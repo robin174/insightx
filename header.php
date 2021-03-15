@@ -41,6 +41,9 @@
 		  gtag('config', 'UA-180735634-1');
 		</script>
 		<?php wp_head(); ?>
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/8c99a08fd4.js" crossorigin="anonymous"></script>
 		
 		<!-- Manual load of stylesheet -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">

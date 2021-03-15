@@ -26,7 +26,7 @@
 										<div class="foot--contact">
 											<p class="footer--sm">Email InsightX on <a href="mailto:info@insightxintel.com" title="Email InsightX">info@insightxintel.com</a><br>
 											Find InsightX on <a href="https://www.linkedin.com/company/insightx/" target="_blank" title="InsightX on LinkedIn">LinkedIn</a><br>
-											<a href="<?php echo get_page_link( get_page_by_path( 'privacy-policy-ix' ) ); ?>" title="Privacy Policy">Privacy Policy</a> | <a href="<?php echo get_page_link( get_page_by_path( 'cookie-policy-ix' ) ); ?>" title="Cookie Policy">Cookie Policy</a></p>
+											<a href="<?php echo get_page_link( get_page_by_path( 'privacy-policy' ) ); ?>" title="Privacy Policy">Privacy Policy</a> | <a href="<?php echo get_page_link( get_page_by_path( 'cookie-policy' ) ); ?>" title="Cookie Policy">Cookie Policy</a></p>
 										</div>
 									</div>
 									<div class="small-12 large-12 cell">

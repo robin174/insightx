@@ -36,7 +36,7 @@ get_header(); ?>
 								</section>
 
 								<section class="section--link">
-									<a class="buttonTextLarge" href="<?php echo get_page_link( get_page_by_path( 'how-we-do-it-ix' ) ); ?>">The Solution</a>
+									<a class="buttonTextLarge" href="<?php echo get_page_link( get_page_by_path( 'how-we-do-it' ) ); ?>">The Solution</a>
 								</section>
 
 							</div>

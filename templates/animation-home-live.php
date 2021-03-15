@@ -77,7 +77,7 @@
 			<span class="midText">Because <span class="red">Reputation</span> is Everything</span>
 		</div>
 		<div>
-			<span class="ctaText"><span class=" dot--brand"><i class="fas fa-square-full"></i></span><a href="<?php echo get_page_link( get_page_by_path( 'what-we-do-ix' ) ); ?>">What we do</a></span>
+			<span class="ctaText"><span class=" dot--brand"><i class="fas fa-square-full"></i></span><a href="<?php echo get_page_link( get_page_by_path( 'what-we-do' ) ); ?>">What we do</a></span>
 		</div>
 	</section>
 </div>

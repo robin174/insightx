@@ -2,7 +2,7 @@
 /*
 Template Name: Page - Homepage (Animation)
 */
-get_header(); ?>
+get_header('home'); ?>
 
 	<div class="content">
         <div class="animation">

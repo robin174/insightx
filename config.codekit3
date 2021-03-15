@@ -634,6 +634,14 @@
 		"oAP": "/functions/translation/zh_CN.po",
 		"oF": 0
 		},
+	"/header-home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/header-home.php",
+		"oF": 0
+		},
 	"/header.php": {
 		"cB": 0,
 		"ft": 8192,

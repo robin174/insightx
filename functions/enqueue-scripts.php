@@ -9,7 +9,7 @@ function site_scripts() {
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/styles/style.css', array(), filemtime(get_template_directory() . '/assets/styles/scss'), 'all' );
 
    	// Additional stylesheet - SCSS
-    wp_enqueue_style( 'site-css-custom', get_template_directory_uri() . '/css/style.css', array(), '', 'all' ); // SCSS files via scss folder, saved in css/styles.css
+    // wp_enqueue_style( 'site-css-custom', get_template_directory_uri() . '/css/style.css', array(), '', 'all' ); // SCSS files via scss folder, saved in css/styles.css
 
     // Comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {

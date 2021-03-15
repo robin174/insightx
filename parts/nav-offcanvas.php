@@ -15,7 +15,7 @@
 	<div class="top-bar-right float-right">
 		<ul class="menu">
 			<?php /* <li><button class="menu-fa" type="button" data-toggle="off-canvas"><i class="fas fa-2x fa-bars"></i></button></li> */ ?>
-			<li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li>
+			<li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> 
 			<?php /* <li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li> */ ?>
 		</ul>
 	</div>

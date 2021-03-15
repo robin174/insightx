@@ -4,13 +4,17 @@
         <h3 class="title--sub-h3"><?php the_sub_field('unit_subheading_h3'); ?></h3>
     <?php endif; ?>
 
+    <?php /*
     <?php if(get_row_layout() == 'block_subheading_h4'): // Subheading: h4 ?>
         <h4 class="title--sub-h4"><?php the_sub_field('unit_subheading_h4'); ?></h3>
     <?php endif; ?>
+    */ ?>
 
+    <?php /*
     <?php if(get_row_layout() == 'block_introduction'): // Paragraph: Introduction ?>
         <p class="font--intro"><?php the_sub_field('unit_introduction'); ?></p>
     <?php endif; ?>
+    */ ?>
 
     <?php if(get_row_layout() == 'block_paragraph'): // Paragraph: Full Width ?>
         <?php the_sub_field('unit_paragraph'); ?>
@@ -28,6 +32,9 @@
                 <div class="small-8 large-6 medium-6 cell">
                     <figure class="image-post">
                         <a href="<?php the_sub_field('unit_pdf'); ?>" target="_blank"><img src="<?php the_sub_field('unit_visual'); ?>" alt="" /></a>
+                        <?php if( get_sub_field('unit_visual_credit') ): ?>
+                            <figcaption class="caption"><?php the_sub_field('unit_visual_credit'); ?></figcaption>
+                        <?php endif; ?>
                     </figure>
                 </div>
             </div>
@@ -40,6 +47,19 @@
             <?php if( get_sub_field('unit_image_credit') ): ?>
                 <figcaption class="caption"><?php the_sub_field('unit_image_credit'); ?></figcaption>
             <?php endif; ?>
+        </figure>
+    <?php endif; ?>
+
+    <?php if(get_row_layout() == 'block_image_report'): // layout: Image / Caption - Half Width ?>
+        <figure class="image-post">
+            <div class="grid-x">
+                <div class="small-9 large-6 medium-6 cell">
+                    <img src="<?php the_sub_field('unit_image'); ?>" alt="" />
+                    <?php if( get_sub_field('unit_image_credit') ): ?>
+                        <figcaption class="caption"><?php the_sub_field('unit_image_credit'); ?></figcaption>
+                    <?php endif; ?>
+                </div>
+            </div>
         </figure>
     <?php endif; ?>
 

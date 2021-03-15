@@ -31,8 +31,8 @@
 		<!-- Typekit: Utopia -->
 		<link rel="stylesheet" href="https://use.typekit.net/ntc5nyr.css">
 
-		<!-- Google Font / Alt: FF Zwo -->
-		<link rel="stylesheet" href="https://use.typekit.net/ntc5nyr.css">
+		<!-- Manual load of stylesheet -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180735634-1"></script>

@@ -61,4 +61,4 @@
 						  To see additional nav styles, visit the /parts directory -->
 					 <?php get_template_part( 'parts/nav', 'offcanvas' ); ?>
 				</header> <!-- end .header -->
-				<div class="background-wrapper">
+				<div class="background-wrapper"><span>.</span>
